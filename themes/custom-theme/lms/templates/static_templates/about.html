@@ -1,0 +1,19 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">
+            Acerca de Nosotros
+            </%block>
+           
+        </h1>
+        <p>
+            <%block name="pagecontent">Tecnonautas es parte de EnerGea, nuestra misión es acercar la educación STEAM a todos, cerrando brechas de género, accesibilidad y distancia para la educación. </%block>
+        </p>
+    </section>
+</main>
