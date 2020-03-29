@@ -1,4 +1,16 @@
-<h1>C&oacute;digo de Honor</h1>
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Honor Code")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Honor Code")}</%block>
+        </h1>
+        <p>
+            <h1>C&oacute;digo de Honor</h1>
 <p><strong>&nbsp;C&oacute;digo de honor de la plataforma de cursos virtuales de Tecnonautas</strong></p>
 <p>&nbsp;Al inscribirte en un curso de la plataforma de Tecnonautas, te est&aacute;s uniendo a nuestro comunidad de aprendizaje. El objetivo de la plataforma es fomentar la equidad deacceso a educaci&oacute;n inclusiva con formaci&oacute;n en las disciplinas STEAM.</p>
 <p>Para inscribirte a nuestros cursos, debes aceptar el c&oacute;digo de honor:</p>
@@ -20,3 +32,8 @@
 </ul>
 <p>Las faltas al C&oacute;digo de Honor ser&aacute;n determinadas a discreci&oacute;n por los miembros de Tecnonautas Bolivia. Ser&aacute;s notificado/a en el caso se determine que has violado este C&oacute;digo de Honor y ser&aacute;s informado/a de la acci&oacute;n correspondiente que se efect&uacute;e como resultado a tu falta.</p>
 <p>Adaptaci&oacute;n del C&oacute;digo de Honor de la plataforma edX&nbsp;<a href="https://www.edx.org/edx-terms-service">https://www.edx.org/edx-terms-service</a></p>
+</p>
+    </section>
+</main>
+
+
