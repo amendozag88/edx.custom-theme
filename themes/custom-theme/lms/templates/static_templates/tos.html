@@ -1,4 +1,16 @@
-<h1>T&eacute;rminos y condiciones de uso</h1>
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Honor Code")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Honor Code")}</%block>
+        </h1>
+        <p>
+           <h1>T&eacute;rminos y condiciones de uso</h1>
 <p>Los usuarios que utilicen la plataforma&nbsp;<strong>Tecnonautas Bolivia&nbsp;</strong>se comprometen a:</p>
 <ul>
 <li>Acceder &uacute;nicamente a los cursos, recursos y actividades de las plataformas para los que se les otorga permiso.</li>
@@ -25,3 +37,7 @@
 <p>Tecnonautas no se hace responsable contractual ni extracontractualmente, de las consecuencias que el uso de las distintas plataformas pueda ocasionar al usuario como por ejemplo hackers, o software malintencionados que provoquen da&ntilde;os en equipos, ordenadores o propiedades, as&iacute; como tambi&eacute;n por interrupciones o fallos en el funcionamiento del entorno, de su contenido o servicios.</p>
 <p>Tecnonautas no se hace responsable en ning&uacute;n caso de las opiniones expresadas por los usuarios a trav&eacute;s de las diversas herramientas del entorno, dado que las mismas no se comprometen, ni se encuentran de manera alguna vinculadas, con las opiniones ni con las pol&iacute;ticas de la Instituci&oacute;n.</p>
 <p>&nbsp;</p>
+        </p>
+    </section>
+</main>
+
